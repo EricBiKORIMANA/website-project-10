@@ -9,6 +9,9 @@ module.exports = {
         black: '#010001',
         yellow: '#FFE901',
       },
+    fontFamily: {
+        outfit: ['Outfit', 'sans-serif'],
+      },
     },
   },
   plugins: [],
