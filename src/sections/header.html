@@ -1,6 +1,35 @@
 <div class="w-full h-auto font-outfit">
-    <div class="max-w-[95%] mx-auto justify-between">
-        <h1 class="text-2xl">Header</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
+    <div class="max-w-[95%] mx-auto flex justify-between items-center lg:items-start p-2 pt-8 lg:pt-4 gap-2">
+        <div
+            class="flex flex-col items-start leading-none font-sans font-extralight text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] gap-2 lg:gap-0">
+            <span>DE</span>
+            <span>EN</span>
+        </div>
+        <h1 class="flex text-[2rem] lg:text-[3rem] font-bold">Baumeister</h1>
+        <ul class="flex-col text-[1.125rem] font-extralight hidden lg:block">
+            <li class="w-full text-center"><a href="#">About</a></li>
+            <li class="w-full text-center"><a href="#">Services</a></li>
+            <li class="w-full text-center"><a href="#">References</a></li>
+            <li class="w-full text-center"><a href="#">Contact</a></li>
+        </ul>
+        <div class="lg:hidden">
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
+            <label for="menu-toggle"
+                class="w-12 h-12 relative overflow-hidden flex items-center justify-center cursor-pointer select-none z-50 peer-checked:[&>#menubar]:hidden peer-checked:[&>#menu-close]:block">
+                <img src="../../src/images/Vector10.webp" alt="Menu Background" class="w-full h-full object-contain" />
+                <img id="menubar" src="../../src/images/menu.webp" alt="Open Menu"
+                    class="absolute w-4 h-4 object-contain" />
+                <span id="menu-close" class="absolute text-white font-extrabold hidden">X</span>
+            </label>
+            <div class="absolute top-24 left-0 right-0 p-6 hidden peer-checked:block bg-whitesmoke z-40">
+                <ul class="flex flex-col items-center gap-5 font-medium text-[2rem] text-green">
+                    <li class="w-full text-center hover:text-[#4FC8DF] transition-colors"><a href="#">About</a></li>
+                    <li class="w-full text-center hover:text-[#4FC8DF] transition-colors"><a href="#">Services</a></li>
+                    <li class="w-full text-center hover:text-[#4FC8DF] transition-colors"><a href="#">References</a>
+                    </li>
+                    <li class="w-full text-center hover:text-[#4FC8DF] transition-colors"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
