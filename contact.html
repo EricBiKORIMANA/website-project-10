@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Contact page</title>
+</head>
+<script>
+    const loadComponents = (id, url) => {
+        fetch(url)
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById(id).innerHTML = html;
+            });
+    }
+
+    window.onload = () => {
+        loadComponents('header', 'src/sections/header.html');
+        loadComponents('hero1', 'src/sections/hero1.html');
+        loadComponents('hero2', 'src/sections/hero2.html');
+        loadComponents('hero3', 'src/sections/hero3.html');
+        loadComponents('hero4', 'src/sections/hero4.html');
+        loadComponents('contact', 'src/sections/contact.html');
+        loadComponents('footer', 'src/sections/footer.html');
+    }
+</script>
+
+<body>
+    <div id="header"></div>
+    <div id="hero1"></div>
+    <div id="hero2"></div>
+    <div id="hero3"></div>
+    <div id="hero4"></div>
+    <div id="contact"></div>
+    <div id="footer" class="text-green"></div>
+</body>
+
+</html>
